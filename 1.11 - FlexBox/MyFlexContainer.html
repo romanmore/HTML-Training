@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>using css , HW1, Roman Shikhri 31264049</title>
+        <style>
+        
+            /*
+            flex layout properies:
+            1. flex-direction: horizontal and vertical
+            2. flex-wrap : horizontal and vertical
+            3. flex-flow= setting of flex-direction + flex-wrap
+            4. justify-content : imud the content, setting content without notes (shulaim)
+            5. align-content - aligning content
+            6. align-item = item alignment
+            7.order - element order , visual but not logic 
+
+            */
+
+
+            .flex-container{
+                display:flex;
+               flex-flow: row wrap;
+               text-align: center;
+            }
+
+            /* the class will relate each div */
+            .flex-container>*{
+                
+                /*margin: 10px;*/
+                padding: 15px;
+                border: 1px solid black;
+                flex: 1 100%;
+
+            }
+
+            .article
+            {
+                text-align: center;
+                background-color: blue;
+                justify-content: space-between;
+                padding: 5px;
+                height: 50px;
+                flex-flow: row wrap;
+                margin: 10px;
+            }
+
+            header{
+                background-color: blueviolet;
+            }
+
+            footer{
+                background-color: blue;
+            }
+
+            .nav{
+                background-color: yellow;
+
+            }
+
+            .nav ul{
+                list-style-type: none;
+            }
+
+            .nav ul a{
+                text-decoration: none;
+
+            }
+
+            .newline
+            {
+                display: flex;
+                background-color: green;
+            }
+
+            .newline2
+            {
+                display: flex;
+                background-color: greenyellow;
+            }
+
+
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div class="flex-container">
+
+            <header>title</header>
+            <nav class="nav">
+                    <ul>
+                            <li>Menu 1</li>
+                            <li>Menu 2</li>
+                            <li>Menu 3</li>
+                    
+                    </ul>
+            </nav>
+
+            <article class="article" >
+                <h1>title article</h1>
+                this is my article content
+            </article>
+
+
+            <div class="newline">
+
+            </div>
+
+            <div><article>yada yada!</article></div>
+            <div><article>yada yada!</article></div>
+            <div><article>yada yada!</article></div>
+
+            <div class="newline2">
+                    newline
+                </div>
+            
+            <footer>footer </footer>
+
+            
+
+        </div>
+
+
+
+    </body>
+</html>

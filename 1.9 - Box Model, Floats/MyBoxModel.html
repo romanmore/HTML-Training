@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>using css box model</title>
+        <!-- view port enabling is to define screen resolution -->
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0"/>
+
+
+        <style>
+        div.box{
+            width:100%;
+            background-color: gainsboro;
+            margin: 10px auto; /* don't align to the very angle point, in each browser */
+            color: black;
+            border: 1px solid black;
+            line-height: 150%;
+        }
+
+        div#header{
+            padding: 5px;
+            background-color: #ddd;
+            border-bottom: 1px solid black;
+        }
+
+        div#header h1{
+            font-size: 32px;
+            color: red;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #leftContent{
+            float: left;
+            width: 100px;
+            margin: 0;
+            padding: 3px;
+        }
+
+        #rightContent{
+            float: right;
+            width: 160px;
+            margin-left: 200px;
+            border-left: 1px solid black;
+            margin-right: 500px;
+            padding: 3px;
+            max-width: 75px;
+
+            
+        }
+
+        div#footer{
+            clear:both;
+            margin:0;
+            padding: 5px;
+            background-color: gainsboro;
+            border-top: 1px solid black;
+        }
+        
+        
+        </style>
+        
+    </head>
+    <!-- Box model in css enabling us to involve design and layout
+        Each box may have a margin, padding, content, border,     
+    -->
+    <body>
+        <div class="box">
+            <div id="header">
+                <h1>Using Box/Container Model</h1>
+            </div>
+            <div id="leftContent">
+                <p>
+                    this is test test test test test test 
+                    test test test test test test test test 
+                    test test test test test test test test 
+                    test test test test test test test test test 
+                </p>
+            </div>
+            <div id="rightContent">
+                    test 
+                    test 
+                    test test test test test 
+                    test test test test test test test test test 
+                    test test test test test test test test test test test  
+            </div>
+
+            <div id="footer">
+                this is my footer area and it's so awesome wow
+            </div>
+        </div>
+        
+    </body>
+</html>

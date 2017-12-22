@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>using css floats</title>
+        <!-- view port enabling is to define screen resolution -->
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0"/>
+
+
+        <style>
+        
+        div.container
+        {
+            width: 100%;
+            border: 1px solid blue;
+
+        }
+
+        header, footer, h1, h2
+        {
+            padding: 3px;
+            color: white;
+            background-color: blue;
+            text-align: center;
+            clear:left        ;
+        }
+
+        nav{
+            float: left;
+            max-width: 100px;
+            margin: 0;
+            padding: 3px;
+
+        }
+
+        /*  extend the css element */
+
+        nav ul{
+        list-style-type: none;
+        padding: 1px;
+    }
+
+    nav ul a
+    {
+        text-decoration: blue;
+
+    }
+
+    article{
+        margin-left: 120px;
+        border-left: 1px solid greenyellow;
+        padding: 3px;
+        overflow: hidden;
+    }
+        
+        </style>
+        <!--
+            css float property:
+            float left, float right, none (is default)
+            initial, inherit
+            float: none|left|right|initial|inherit
+        -->
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <header>
+                <h1>Using CSS Float</h1>
+            </header>
+        </div>
+
+        <nav>
+            <ul>
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Using CSS Float preperty</h2>
+            <p>Using css property with assigned properties directions </p>
+            <p>Using css property with assigned properties directions </p>
+            <p>Using css property with assigned properties directions </p>
+            <p>Using css property with assigned properties directions </p>
+            
+
+        </article>
+
+        <article>
+                <h2>Using CSS Float preperty</h2>
+                <p>Using css property with assigned properties directions </p>
+                <p>Using css property with assigned properties directions </p>
+                <p>Using css property with assigned properties directions </p>
+                <p>Using css property with assigned properties directions </p>
+            </article>
+
+
+        <footer>
+            Powered by Roman the master, muhahaha
+        </footer>
+    </body>
+</html>

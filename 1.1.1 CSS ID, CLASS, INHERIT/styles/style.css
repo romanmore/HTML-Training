@@ -1,0 +1,45 @@
+/* 
+syntax:
+selector {properties}
+*/
+
+body {
+    background-color: bisque;
+    font-family: 'Arial';
+}
+
+p {
+    text-align: center;
+    color: blue;
+}
+
+.myClass {
+    /* use wherever u want how many u want*/
+    text-align: center;
+    color: green;
+}
+
+#myId{
+    /* use only one time in a div*/
+    text-align: center;
+    color: pink;
+}
+
+/* each p which have the class center
+    every p tag that has center class will have red font color
+*/
+p.center{
+    color: red;
+
+}
+
+/* every p tag that has center tag will have red font color*/
+p#center{
+    color: red;
+}
+
+/*collecting several elements together to have the same style**/
+body, table, td, h1,h2,p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}

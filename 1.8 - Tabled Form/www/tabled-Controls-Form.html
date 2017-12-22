@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Introduction</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body dir="rtl">
+    <h1>דף הבית שלי</h1>
+    <table width="100%" align="center" border="1">
+
+        <tr>
+            <td>
+                נא לבחור את הקורסים שהנך מעוניין בהם
+            </td>
+            <td>
+                <input type="checkbox" name="chkInternet" value="אינטרנט" /> אינטרנט
+                <input type="checkbox" name="chkMarketing" value="שיווק" /> שיווק
+                <input type="checkbox" name="chkProgramming" value="שיווק" /> תכנות
+                <input type="checkbox" name="chkOther" value="אחר" /> אחר
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                נא לסמן האם הנך מגיע\ה לסמסטר הנוכחי
+            </td>
+            <td>
+                <input type="radio" name="rdoAttendance" /> מגיע\ה
+                <input type="radio" name="rdoAttendance" /> לא מגיע\ה
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                נא לבחור את הקורס שהנך מעוניין בו
+            </td>
+            <td>
+                <select name="courses">
+                    <option value=" optIndustrialMarketing">
+                        שיווק תעשייתי
+                    </option>
+                    <option value="optSoftwareEngineering">
+                        הנדסת תוכנה
+                    </option>
+                    <option value="optDatabases">
+                        בסיסי נתונים
+                    </option>
+                    <option value="optOther">
+                        אחר
+                    </option>
+
+                </select>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>
+                לוגו חברה
+            </td>
+            <td>
+                <img src="../pics/logo.jpeg" width="287" height="195" hspace="20" vspace="20">
+            </td>
+           
+        </tr>
+
+        
+
+
+    </table>
+
+
+
+    <p id="myPId">
+        this is my id
+    </p>
+    <script>
+        document.getElementById("myPId").innerHTML = "hellp class, don't worry it's only JS"
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>js</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <link rel="stylesheet" href="styles/style.css">
+
+        
+    </head>
+
+    <body>
+
+        <form id="frmMain" method="POST" action="catalogImgs.html">
+
+            <table border="1" width="100%" align="center">
+                <tr>
+                    <td>User Name:</td>
+                    <td>
+                        <input type="text" name="txtUserName" 
+                                maxlength="15" 
+                                size="20" 
+                                required
+                                 placeholder="please enter user name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="txtPassword" 
+                                maxlength="15" 
+                                size="20" 
+                                required
+                                placeholder="please enter a password">
+                    </td>
+                </tr>
+
+                <tr>
+                        <td>Price Range: </td>
+                        <td>
+                            <input type="number" size="6" name="numPriceRange" min="15" max="23" value="16" >
+                        </td>
+                    </tr>
+
+                <tr>
+                        <td></td>
+                        <td>
+                            <input type="range" name="rngSatisfaction" min="1" max="5" value="3">
+                        </td>
+                    </tr>
+
+                <tr>
+                        <td></td>
+                        <td>            
+                            <input type="range" list="lstTickmarks">
+                            <datalist id="lstTickmarks">
+                                <option value="0" label="0%"></option>
+                                <option value="10">
+                                <option value="20" label="20%">
+                                <option value="30" >
+                                <option value="30" label="40%">
+                            </datalist>
+                        </td>
+                    </tr>
+
+            </table>
+
+
+            <!--  Controls-->
+             
+            
+
+
+            
+            
+
+
+            Agree: <input type="radio" name="rdoYesNo" checked/>
+            DisAgree: <input type="radio" name="rdoYesNo"/>
+
+            <br>
+
+            Choose Color: <br>
+            Red: <input type="checkbox" name="chkRed" checked/>
+            Green: <input type="checkbox" name="chkGreen" />
+            Blue: <input type="checkbox" name="chkBlue" />
+
+
+            <select name="lstCourses">
+                <option value="optJS">JavaScript</option>
+                <option value="optCsharp">C#</option>
+                <option value="optJava">Java</option>
+
+
+            </select>
+            <br><br>
+            <span><input type="reset"></span>
+            <span><input type="submit" value="send"></span>
+            
+        </form>
+
+    </body>
+</html>

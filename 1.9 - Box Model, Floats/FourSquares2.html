@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Using Css Box Model </title>
+    <style>
+        div.box{
+            width: 100%;
+            margin: 10px auto;
+        }
+        #left1{
+            float:left;
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+        }
+        #right1{   
+            margin-left: 50%;
+            width: 50%;
+            height: 50%;
+            
+            background-color: red;
+            clear: right;
+        }
+        #left2{
+            float:left;
+            width: 50%;
+            height: 50%;
+            
+            background-color: green;
+            clear: right;
+        }
+        #right2{
+            margin-left: 50%;
+            width: 50%;
+            height: 50%;
+            background-color: blue;
+        }
+
+
+    </style>
+
+
+</head>  
+<!-- Box model is CSS enabling us to involve design and layout
+Each box may have margin, padding, content, border
+
+-->
+<body>
+    <div class="box">
+        <div id="left1">
+            <p></p>
+        </div>
+        <div id="right1">
+            <p></p>
+        </div>
+        <div id="left2">
+            <p></p>
+        </div>
+        <div id="right2">
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
